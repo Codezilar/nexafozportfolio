@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Geist } from 'next/font/google'
 
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-const poppins = Poppins({
+const roboto = Geist({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
   title: "NexaFOZ",
-  description: "NexaFOZ",
+  description: "Building and Scaling Of Digital Businesses",
 };
 
 import {
@@ -30,7 +30,7 @@ export default function RootLayout({
         <head>
           <link rel="icon" href="/nex.png" sizes="any" />
         </head>
-        <body className={`${poppins.className}`}> 
+        <body className={`${roboto.className}`}> 
           {children}
           <Footer />
         </body>

@@ -17,9 +17,9 @@ export default function Home() {
         <Hero />
       </main>
       <Flex />
-      <RecentProject />
+      <RecentProject isIndexPage={true} />
       <Meme />
-      <Pricing />   
+      <Pricing isIndexPage={true} />   
       <Blog />
       <Reviews />
       <Map />

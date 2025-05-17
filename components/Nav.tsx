@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
 import { FaXTwitter } from "react-icons/fa6";
@@ -8,6 +9,7 @@ import { FloatingNav } from './ui/FloatingNav';
 import { navItems, floatNav } from "@/data";
 import Link from 'next/link';
 import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import { FaBars } from "react-icons/fa";
 
 const Nav = () => {
   return (
@@ -35,7 +37,7 @@ const Nav = () => {
                             <SignedIn>
                                 <UserButton />
                             </SignedIn>
-                            <span><i className="fa-solid fa-bars navbar"></i></span>
+                            <span><FaBars className='navbar' /></span>
                         </div>
                     </div>
             </div>
