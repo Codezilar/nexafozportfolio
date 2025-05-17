@@ -166,6 +166,43 @@ button{
     font-size: 20px;
 }
 
+/* mobile nav */
+.MobileNav{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+
+.MobileNav-container{
+    background-color: #000;
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    right: -83%;
+}
+
+.cancel_mobile{
+    position: absolute;
+    font-size: 30px;
+}
+
+.MobileNav-container ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -1552,6 +1589,10 @@ footer{
 
     .main_nav_eft ul{
         display: none;
+    }
+
+    .navbar{
+        display: block;
     }
     .nav_center{
         gap: 0.5rem;

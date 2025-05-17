@@ -18,6 +18,7 @@ import {
   ClerkProvider,
 
 } from '@clerk/nextjs'
+import MobileNav from "@/components/MobileNav";
 
 export default function RootLayout({
   children,
@@ -31,7 +32,8 @@ export default function RootLayout({
           <link rel="icon" href="/nex.png" sizes="any" />
         </head>
         <body className={`${roboto.className}`}> 
-          {children}
+          <MobileNav />
+            {children}
           <Footer />
         </body>
       </html>
